@@ -4,22 +4,21 @@ void userInput(double[], int );
 double getTotal(double[], int, double& );
 double getAverage(double[],int, double);
 double getHighest(double [], int) ;
-// i added a reference variable so i could be able to use it in my check function
-double getLowest(double[], int, double &);
-bool check(double [], int, double);
+double getLowest(double[], int);
+
 int main()
 {
     int const size = 12;
     double array[size];
     double total;
-    double lowest;
+    
     userInput(array, size);
 
     
     cout << "The total:" << " " << getTotal(array, size, total);
     cout << "\nThe highest:" << " " << getHighest(array,size);
  
-    cout << "\nThe lowest:"  << " "<< getLowest(array,size, lowest);
+    cout << "\nThe lowest:"  << " "<< getLowest(array,size);
    
     cout << "\nAverage is:" << " " <<getAverage(array, size, total);
     return 0;
@@ -64,8 +63,8 @@ double getHighest (double value [], int size)
     }
     return highest;
 }
-double getLowest (double value [], int size, double &lowest)
-{
+double getLowest (double value [], int size)
+{   double lowest;
     lowest = value[0];
     for(int count =1; count < size; count++)
     {
@@ -82,10 +81,5 @@ double getAverage(double value [], int size, double total)
 {   double average;
     return average = total /size;
 }
-// I am trying to check if there's a lowest value or not 
-bool check(double value [], int size, double lowest)
-{
-    bool status;
-    
-    
-}
+      
+  
