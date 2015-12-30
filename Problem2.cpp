@@ -5,7 +5,7 @@ double getTotal(double[], int, double& );
 double getAverage(double[],int, double);
 double getHighest(double [], int) ;
 // i added a reference variable so i could be able to use it in my check function
-double getLowest(double[], int, double &lowest);
+double getLowest(double[], int, double &);
 bool check(double [], int, double);
 int main()
 {
