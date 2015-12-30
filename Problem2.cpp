@@ -14,13 +14,14 @@ int main()
     
     userInput(array, size);
 
-    
     cout << "The total:" << " " << getTotal(array, size, total);
+    
     cout << "\nThe highest:" << " " << getHighest(array,size);
  
     cout << "\nThe lowest:"  << " "<< getLowest(array,size);
    
     cout << "\nAverage is:" << " " <<getAverage(array, size, total);
+    
     return 0;
 }
 void userInput(double value[], int size)
@@ -52,7 +53,9 @@ double getTotal(double value [], int size, double &total)
 double getHighest (double value [], int size)
 {
     int highest;
+    
     highest = value[0];
+    
     for(int count =1; count < size; count++)
     {
         if(value[count] > highest)
@@ -64,8 +67,11 @@ double getHighest (double value [], int size)
     return highest;
 }
 double getLowest (double value [], int size)
-{   double lowest;
+{  
+    double lowest;
+    
     lowest = value[0];
+    
     for(int count =1; count < size; count++)
     {
         if(value[count] < lowest)
@@ -78,7 +84,9 @@ double getLowest (double value [], int size)
 }
 
 double getAverage(double value [], int size, double total)
-{   double average;
+{   
+    double average;
+    
     return average = total /size;
 }
       
