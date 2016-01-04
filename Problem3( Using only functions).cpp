@@ -68,7 +68,8 @@ int getLowest(int jars [], int size)
     return lowest;
 }
 void display(string names [], int jars [], int size)
-{   int highest;
+{  
+    int highest;
     int lowest;
     cout << "\nSales Report";
     for(int count = 0; count < size; count++)
